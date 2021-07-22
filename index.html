@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<link rel="stylesheet" href="person.css" type="text/css" />
+<title>Brian Thompson</title>
+</head>
+<body>
+<div id="layout-content">
+<div id="toptitle">
+<h1>Brian Thompson</h1>
+<div id="subtitle">
+
+
+
+
+
+
+
+&lt;firstname&gt;@alumni.caltech.edu <br />
+&lt;firstname&gt;jt@amazon.com
+</div>
+</div>
+<h2>About Me</h2>
+<p>I am currently a Senior Applied Scientist in Amazon's Artificial General Intelligence (AGI) org, where I work on large language model (LLM) training. 
+
+I have previously worked at <a href="https://www.apple.com/">Apple</a>,
+<a href="https://www.jhu.edu/">Johns Hopkins University</a> (where I also completed my PhD), 
+<a href="https://www.ll.mit.edu/">MIT Lincoln Laboratory</a>, 
+and <a href="https://www.rincon.com/">Rincon Research Corporation</a>,
+on topics including
+machine translation (MT),
+automatic dubbing,
+text-to-speech (TTS),
+data curation and filtering,
+MT evaluation,
+multilingual modeling,
+paraphrasing,
+cross-language information retrieval,
+domain adaptation,
+and digital signal processing.</p>
+<p>My <a href="https://arxiv.org/pdf/2401.05749.pdf">recent work</a>
+exploring the impact of machine translation on the web has been covered by
+<a href="https://www.politico.com/newsletters/digital-future-daily/2024/01/25/a-red-flag-for-ai-translation-00137942">Politico</a>,
+<a href="https://www.theatlantic.com/technology/archive/2024/04/generative-ai-low-resource-languages/678042/">The Atlantic</a>,
+<a href="https://slator.com/amazon-flags-problem-using-web-scraped-machine-translated-data-llm-training/">Slator</a>,
+<a href="https://www.vice.com/en/article/y3w4gw/a-shocking-amount-of-the-web-is-already-ai-translated-trash-scientists-determine">Vice</a>,
+<a href="https://www.techinsider.ru/news/news-1628473-oshibochnye-mashinnye-perevody-zabivayut-internet-slovesnym-musorom/">TechInsider</a>,
+<a href="https://futurism.com/the-byte/internet-ai-generated-slime">Futurism</a>, 
+and others.</p>
+<h2>Open Source Projects</h2>
+<p>I developed <a href="https://github.com/thompsonb/vecalign">Vecalign</a> for the <a href="https://paracrawl.eu/">ParaCrawl</a> parallel data acquisition project.  
+Vecalign is an accurate sentence alignment algorithm based on multilingual sentence embeddings 
+which is linear in complexity with respect to the number of sentences being aligned. 
+In conjunction with a multilingual sentence embedding model like <a href="https://github.com/facebookresearch/LASER">LASER</a> or <a href="http://blog.research.google/2020/08/language-agnostic-bert-sentence.html">LaBSE</a>, 
+Vecalign makes it easy to perform sentence alignment in about 100 languages (i.e. 100^2 language pairs), 
+without the need for a machine translation system or lexicon. 
+At the time of writing, Vecalign has the best reported performance on the test set 
+released with <a href="https://github.com/rsennrich/Bleualign">Bleualign</a>.<br /></p>
+<p>I also developed <a href="https://github.com/thompsonb/prism">Prism</a>,
+an automatic MT metric which uses a sequence-to-sequence paraphraser
+to score MT system outputs conditioned on their respective human references.
+Prism uses a multilingual neural MT model as a zero-shot paraphraser,
+which eliminates the need for synthetic paraphrase data and results in a single model which works in many languages (we release a model in 39 languages).
+At the time of publication, Prism outperformed or statistically tied with
+all metrics submitted to the <a href="https://www.aclweb.org/anthology/W19-5302/">WMT 2019 metrics shared task</a> 
+at segment-level human correlation.
+I developed bitext filtering code to preprocess the data used to train Prism, but the code is general enough to use for any MT training and is released <a href="https://github.com/thompsonb/prism_bitext_filter">here</a>.<br /></p>
+<h2>Education</h2>
+<p>The Johns Hopkins University  </p>
+<ul>
+<li><p>PhD, Computer Science, <a href="http://www.clsp.jhu.edu/">Center for Language and Speech Processing (CLSP)</a></p>
+</li>
+<li><p>Work completed while I was a Research Scientist at the <a href="https://hltcoe.jhu.edu/">JHU Human Language Technology Center of Excellence (HLTCOE)</a></p>
+</li>
+<li><p>I was advised by <a href="http://www.cs.jhu.edu/~phi/">Philipp Koehn</a> and funded by a <a href="https://ndseg.org/about">National Defense Science and Engineering Graduate (NDSEG) Fellowship</a></p>
+</li>
+<li><p>Thesis: <a href="https://jscholarship.library.jhu.edu/handle/1774.2/63699">Sentence Similarity and Machine Translation</a></p>
+</li>
+</ul>
+<p>California Institute of Technology</p>
+<ul>
+<li><p>MS, Electrical Engineering</p>
+</li>
+</ul>
+<p>Rose-Hulman Institute of Technology</p>
+<ul>
+<li><p>BS, Electrical Engineering</p>
+</li>
+</ul>
+<h2>Publications</h2>
+<p>Note: <a href="https://scholar.google.com/citations?user=6IGa-LoAAAAJ&amp;hl=en">Google Scholar</a> may be more up-to-date.</p>
+<ul>
+<li><p>A Shocking Amount of the Web is Machine Translated: Insights from Multi-Way Parallelism <br />
+<b>Brian Thompson</b>, Mehak Preet Dhaliwal, Peter Frisch, Tobias Domhan, <a href="https://www.marcellofederico.net/">Marcello Federico</a> <br />
+arXiv preprint <br />
+<a href="https://arxiv.org/pdf/2401.05749.pdf">[pdf]</a>  <a href="bib/thompson2024mwparallel.bib">[BibTeX]</a>  <a href="https://github.com/amazon-science/multi-way-parallel-ccmatrix">[code]</a> <br />
+</p>
+</li>
+</ul>
+<ul>
+<li><p>Findings of the WMT 2023 Shared Task on Parallel Data Curation <br />
+Steve Sloto, <b>Brian Thompson</b>,<a href="https://khayrallah.github.io/">Huda Khayrallah</a>, Tobias Domhan, Thamme Gowda, <a href="http://www.cs.jhu.edu/~phi/">Philipp Koehn</a> <br />
+Proceedings of the Eighth Conference on Machine Translation (WMT 2023) <br />
+<a href="https://aclanthology.org/2023.wmt-1.5.pdf">[pdf]</a> <a href="https://aclanthology.org/2023.wmt-1.5.bib">[BibTeX]</a></p>
+</li>
+</ul>
+<ul>
+<li><p>Results of WMT23 Metrics Shared Task: Metrics Might Be Guilty but References Are Not Innocent <br />
+<a href="https://freitagmarkus.github.io/">Markus Freitag</a>, Nitika Mathur, <a href="https://nrc.canada.ca/en/corporate/contact-us/nrc-directory-science-professionals/chi-kiu-jackie-lo">Chi-kiu Lo</a>, Eleftherios Avramidis, <a href="https://ricardorei.github.io/">Ricardo Rei</a>, <b>Brian Thompson</b>, <a href="https://kocmi.tk/">Tom Kocmi</a>, <a href="https://research.tilburguniversity.edu/en/persons/fred-blain">Frederic Blain</a>, <a href="https://danieldeutsch.github.io/">Daniel Deutsch</a>, Craig Stewart, Chrysoula Zerva, <a href="https://www.dcu.ie/adapt/people/sheila-castilho">Sheila Castilho</a>, <a href="http://www.cs.cmu.edu/~alavie/">Alon Lavie</a>, <a href="https://research.google/people/george-foster/">George Foster</a> <br />
+Proceedings of the Eighth Conference on Machine Translation (WMT 2023) <br />
+<a href="https://aclanthology.org/2023.wmt-1.51.pdf">[pdf]</a> <a href="https://aclanthology.org/2023.wmt-1.51.bib">[BibTeX]</a> </p>
+</li>
+</ul>
+<ul>
+<li><p>Findings of the IWSLT 2023 Evaluation Campaign  <br />
+<a href="https://milind-agarwal.github.io/">Milind Agarwal</a>,
+<a href="https://sweta20.github.io/">Sweta Agrawal</a>,
+<a href="https://cs.gmu.edu/~antonis/author/antonios-anastasopoulos/">Antonios Anastasopoulos</a>,
+Luisa Bentivogli,
+<a href="https://ufal.mff.cuni.cz/ondrej-bojar">Ondřej Bojar</a>,
+Claudia Borg, <a href="https://www.cs.umd.edu/~marine/">Marine Carpuat</a>,
+Roldano Cattoni,
+Mauro Cettolo,
+<a href="https://mingdachen.github.io/">Mingda Chen</a>,
+William Chen,
+Khalid Choukri,
+<a href="https://alexandra-chron.github.io/">Alexandra Chronopoulou</a>,
+<a href="http://annacurrey.github.io/">Anna Currey</a>,
+<a href="https://www.dfki.de/~declerck/">Thierry Declerck</a>,
+Qianqian Dong,
+<a href="http://cs.jhu.edu/~kevinduh/">Kevin Duh</a>,
+<a href="https://cv.hal.science/yannick-esteve">Yannick Estève</a>,
+<a href="https://www.marcellofederico.net/">Marcello Federico</a>,
+<a href="https://sites.google.com/site/souhirgahbiche">Souhir Gahbiche</a>,
+<a href="http://homepages.inf.ed.ac.uk/bhaddow/">Barry Haddow</a>,
+Benjamin Hsu,
+<a href="https://phumonhtut.me/">Phu Mon Htut</a>,
+Hirofumi Inaguma,
+<a href="https://ufal.mff.cuni.cz/david-javorsky">Dávid Javorský</a>,
+John Judge,
+Yasumasa Kano,
+<a href="https://tomkocse.github.io/">Tom Ko</a>,
+<a href="https://rish.uk/">Rishu Kumar</a>,
+Pengwei Li,
+Xutai Ma,
+<a href="http://mtresearcher.github.io/">Prashant Mathur</a>,
+Evgeny Matusov,
+<a href="http://pmcnamee.net/">Paul McNamee</a>,
+<a href="http://john.mccr.ae/">John P. McCrae</a>,
+<a href="https://kentonmurray.com/index.html">Kenton Murray</a>,
+<a href="http://maria.nadejde.com/">Maria Nadejde</a>,
+<a href="https://ahclab.naist.jp/Prof.Nakamura/index_e.html">Satoshi Nakamura</a>,
+Matteo Negri,
+Ha Nguyen,
+<a href="https://ai4lt.anthropomatik.kit.edu/english/21_92.php">Jan Niehues</a>,
+<a href="https://www.xingniu.org/">Xing Niu</a>,
+Atul Kr. Ojha,
+<a href="https://johneortega.github.io/">John E. Ortega</a>,
+<a href="https://proyag.github.io/">Proyag Pal</a>,
+Juan Pino,
+<a href="https://sites.google.com/site/lonnekenlp">Lonneke van der Plas</a>,
+Peter Polák
+Elijah Rippeth,
+<a href="[https://esalesky.github.io/">Elizabeth Salesky</a>,
+<a href="http://shijt.site/">Jiatong Shi</a>,
+<a href="http://msperber.com/">Matthias Sperber</a>,
+Sebastian Stüker,
+<a href="https://www.sudoh.nl/">Katsuhito Sudoh</a>,
+Yun Tang,
+<b>Brian Thompson</b>, 
+Kevin Tran,
+Marco Turchi,
+<a href="https://www.cs.cmu.edu/~ahw/">Alex Waibel</a>,
+<a href="https://mingxuan.github.io/">Mingxuan Wang</a>, 
+<a href="https://sites.google.com/view/shinjiwatanabe">Shinji Watanabe</a>,
+Rodolfo Zevallos <br />
+Proceedings of the 20th International Conference on Spoken Language Translation (IWSLT 2023) <br />
+<a href="https://aclanthology.org/2023.iwslt-1.1v2.pdf">[pdf]</a> <a href="https://aclanthology.org/2023.iwslt-1.1.bib">[BibTeX]</a></p>
+</li>
+</ul>
+<ul>
+<li><p>End-to-End Single-Channel Speaker-Turn Aware Conversational Speech Translation <br />
+<a href="https://juanpzuluaga.github.io/">Juan Pablo Zuluaga-Gomez</a>, <a href="https://sites.google.com/site/zhaochenghuang7">Zhaocheng Huang</a>, <a href="https://www.xingniu.org/">Xing Niu</a>, Rohit Paturi, Sundararajan Srinivasan, <a href="http://mtresearcher.github.io/">Prashant Mathur</a>, <b>Brian Thompson</b>, <a href="https://www.marcellofederico.net/">Marcello Federico</a> <br />
+Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP 2023) <br />
+<a href="https://aclanthology.org/2023.emnlp-main.449.pdf">[pdf]</a> <a href="https://aclanthology.org/2023.emnlp-main.449.bib">[BibTeX]</a> </p>
+</li>
+</ul>
+<ul>
+<li><p>Speaker Diarization of Scripted Audiovisual Content <br />
+Yogesh Virkar, <b>Brian Thompson</b>, Rohit Paturi, Sundararajan Srinivasan,  <a href="https://www.marcellofederico.net/">Marcello Federico</a> <br />
+arXiv preprint <br />
+<a href="https://arxiv.org/pdf/2308.02160.pdf">[pdf]</a> <a href="bib/virkar2023speaker.bib">[BibTeX]</a></p>
+</li>
+</ul>
+<ul>
+<li><p>Improving Isochronous Machine Translation with Target Factors and Auxiliary Counters <br />
+<a href="https://proyag.github.io/">Proyag Pal</a>, <b>Brian Thompson</b>, Yogesh Virkar, <a href="http://mtresearcher.github.io/">Prashant Mathur</a>, <a href="https://alexandra-chron.github.io/">Alexandra Chronopoulou</a>,  <a href="https://www.marcellofederico.net/">Marcello Federico</a> <br />
+Proceedings of INTERSPEECH 2023 <br />
+<a href="https://www.isca-speech.org/archive/pdfs/interspeech_2023/pal23_interspeech.pdf">[pdf]</a>  <a href="bib/pal23improving.bib">[BibTeX]</a> <a href="https://github.com/amazon-science/iwslt-autodub-task">[code]</a></p>
+</li>
+</ul>
+<ul>
+<li><p>Jointly Optimizing Translations and Speech Timing to Improve Isochrony in Automatic Dubbing <br />
+Alexandra Chronopoulou, <b>Brian Thompson</b>,  <a href="http://mtresearcher.github.io/">Prashant Mathur</a>, Yogesh Virkar, Surafel M. Lakew, <a href="https://www.marcellofederico.net/">Marcello Federico</a> <br />
+arXiv preprint <br />
+<a href="https://arxiv.org/pdf/2302.12979.pdf">[pdf]</a> <a href="bib/chronopoulou2023jointly.bib">[BibTeX]</a> </p>
+</li>
+</ul>
+<ul>
+<li><p>Improving Robustness of Retrieval Augmented Translation via Shuffling of Suggestions <br />
+<a href="https://hoangcuong2011.github.io/">Cuong Hoang</a>, <a href="https://www.dsachan.com/">Devendra Sachan</a>, <a href="http://mtresearcher.github.io/">Prashant Mathur</a>, <b>Brian Thompson</b>, <a href="https://www.marcellofederico.net/">Marcello Federico</a> <br />
+arXiv preprint <br />
+<a href="https://arxiv.org/pdf/2210.05059">[pdf]</a>  <a href="bib/hoang2022improving.bib">[BibTeX]</a></p>
+</li>
+</ul>
+<ul>
+<li><p>Improving Retrieval Augmented Neural Machine Translation by Controlling Source and Fuzzy-Match Interactions <br />
+<a href="https://hoangcuong2011.github.io/">Cuong Hoang</a>, <a href="https://www.dsachan.com/">Devendra Sachan</a>, <a href="http://mtresearcher.github.io/">Prashant Mathur</a>, <b>Brian Thompson</b>, <a href="https://www.marcellofederico.net/">Marcello Federico</a> <br />
+Findings of the Association for Computational Linguistics (EACL 2023) <br />
+<a href="https://aclanthology.org/2023.findings-eacl.22.pdf">[pdf]</a> <a href="https://aclanthology.org/2023.findings-eacl.22.bib">[BibTeX]</a> </p>
+</li>
+</ul>
+<ul>
+<li><p>Dubbing in Practice: A Large Scale Study of Human Localization With Insights for Automatic Dubbing <br />
+<a href="https://willbrannon.com/">William Brannon</a>, Yogesh Virkar, <b>Brian Thompson</b> <br />
+Transactions of the Association for Computational Linguistics (TACL 2023) <br />
+<a href="https://direct.mit.edu/tacl/article-pdf/doi/10.1162/tacl_a_00551/2093728/tacl_a_00551.pdf">[pdf]</a> <a href="https://aclanthology.org/2023.tacl-1.25.bib">[BibTeX]</a> </p>
+</li>
+</ul>
+<ul>
+<li><p>Embarrassingly Easy Document-Level MT Metrics: How to Convert Any Pretrained Metric into a Document-Level Metric <br />
+<a href="https://georgevern.github.io/">Giorgos Vernikos</a>, <b>Brian Thompson</b>, <a href="http://mtresearcher.github.io/">Prashant Mathur</a>, <a href="https://www.marcellofederico.net/">Marcello Federico</a> <br />
+Proceedings of the Seventh Conference on Machine Translation (WMT 2022) <br />
+<a href="https://aclanthology.org/2022.wmt-1.6.pdf">[pdf]</a> <a href="https://aclanthology.org/2022.wmt-1.6.bib">[BibTeX]</a> <a href="https://github.com/amazon-science/doc-mt-metrics">[code]</a></p>
+</li>
+</ul>
+<ul>
+<li><p>Improving Arabic Diacritization by Learning to Diacritize and Translate <br />
+<b>Brian Thompson</b> and Ali Alshehri <br />
+Proceedings of the 19th International Conference on Spoken Language Translation (IWSLT 2022) <br />
+<a href="https://aclanthology.org/2022.iwslt-1.2.pdf">[pdf]</a> <a href="https://aclanthology.org/2022.iwslt-1.2.bib">[BibTeX]</a> <a href="https://drive.google.com/file/d/1CcqRBL4HpuIo1CH2VmO8suP8mE9l-E_r/view?usp=sharing">[talk]</a></p>
+</li>
+</ul>
+<ul>
+<li><p>Paraphrase Generation as Zero-Shot Multilingual Translation: Disentangling Semantic Similarity from Lexical and Syntactic Diversity <br />
+<b>Brian Thompson</b> and <a href="http://matt.waypost.net/">Matt Post</a> <br />
+Proceedings of the Fifth Conference on Machine Translation (WMT 2020) <br />
+<a href="https://github.com/thompsonb/prism">[code]</a> <a href="https://aclanthology.org/2020.wmt-1.67.pdf">[pdf]</a> <a href="https://aclanthology.org/2020.wmt-1.67.bib">[BibTeX]</a> <a href="https://slideslive.com/38939552">[talk]</a></p>
+</li>
+</ul>
+<ul>
+<li><p>Automatic Machine Translation Evaluation in Many Languages via Zero-Shot Paraphrasing <br />
+<b>Brian Thompson</b> and <a href="http://matt.waypost.net/">Matt Post</a> <br />
+Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP) <br />
+<a href="https://github.com/thompsonb/prism">[code]</a> <a href="https://aclanthology.org/2020.emnlp-main.8.pdf">[pdf]</a> <a href="https://aclanthology.org/2020.emnlp-main.8.bib">[BibTeX]</a> <a href="https://slideslive.com/38938798">[talk]</a></p>
+</li>
+</ul>
+<ul>
+<li><p>Exploiting Sentence Order in Document Alignment <br />
+<b>Brian Thompson</b> and <a href="http://www.cs.jhu.edu/~phi/">Philipp Koehn</a> <br />
+Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP) <br />
+<a href="https://aclanthology.org/2020.emnlp-main.483.pdf">[pdf]</a> <a href="https://aclanthology.org/2020.emnlp-main.483.bib">[BibTeX]</a> <a href="https://slideslive.com/38938745">[talk]</a></p>
+</li>
+</ul>
+<ul>
+<li><p>Simulated Multiple Reference Training Improves Low-Resource Machine Translation <br />
+<a href="https://khayrallah.github.io/">Huda Khayrallah</a>, <b>Brian Thompson</b>, <a href="http://matt.waypost.net/">Matt Post</a>, and <a href="http://www.cs.jhu.edu/~phi/">Philipp Koehn</a> <br />
+Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP) <br />
+<a href="https://github.com/thompsonb/fairseq-smrt">[code]</a> <a href="https://aclanthology.org/2020.emnlp-main.7.pdf">[pdf]</a> <a href="https://aclanthology.org/2020.emnlp-main.7.bib">[BibTeX]</a> <a href="https://slideslive.com/38938786">[talk]</a></p>
+</li>
+</ul>
+<ul>
+<li><p>ParaCrawl: Web-Scale Acquisition of Parallel Corpora <br />
+Marta Bañón,
+Pinzhen Chen,
+<a href="http://homepages.inf.ed.ac.uk/bhaddow/">Barry Haddow</a>,
+<a href="https://kheafield.com/">Kenneth Heafield</a>,
+<a href="http://statmt.org/hieu/">Hieu Hoang</a>,
+<a href="https://www.dlsi.ua.es//~mespla/index_en.html">Miquel Esplà-Gomis</a>,
+<a href="https://www.dlsi.ua.es/~mlf/">Mikel Forcada</a>,
+Amir Kamran,
+Faheem Kirefu,
+<a href="http://www.cs.jhu.edu/~phi/">Philipp Koehn</a>,
+Sergio Ortiz-Rojas,
+<a href="https://lpla.github.io/">Leopoldo Pla</a>,
+<a href="http://www.lt-innovate.org/directory/contact/ram%C3%ADrez-s%C3%A1nchez-gema">Gema Ramírez-Sánchez</a>,
+Elsa Sarrías,
+Marek Strelec,
+<b>Brian Thompson</b>,
+<a href="https://tardis.ed.ac.uk/~wwaites/">William Waites</a>,
+Dion Wiggins, and
+Jaume Zaragoza <br />
+Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL 2020) <br />
+<a href="https://paracrawl.eu/">[website]</a> <a href="https://aclanthology.org/2020.acl-main.417.pdf">[pdf]</a> <a href="https://aclanthology.org/2020.acl-main.417.bib">[BibTeX]</a> <a href="http://slideslive.com/38928733">[talk]</a></p>
+</li>
+</ul>
+<ul>
+<li><p>Benchmarking Neural and Statistical Machine Translation on Low-Resource African Languages <br />
+<a href="http://cs.jhu.edu/~kevinduh/">Kevin Duh</a>, <a href="http://pmcnamee.net/">Paul McNamee</a>, <a href="http://matt.waypost.net/">Matt Post</a>, and <b>Brian Thompson</b> <br />
+Proceedings of The 12th Language Resources and Evaluation Conference (LREC 2020) <br />
+<a href="https://www.aclweb.org/anthology/2020.lrec-1.325.pdf">[pdf]</a> <a href="https://www.aclweb.org/anthology/2020.lrec-1.325.bib">[BibTeX]</a> </p>
+</li>
+</ul>
+<ul>
+<li><p>Vecalign: Improved Sentence Alignment in Linear Time and Space <br />
+<b>Brian Thompson</b> and <a href="http://www.cs.jhu.edu/~phi/">Philipp Koehn</a> <br />
+Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP) <br />
+<a href="https://github.com/thompsonb/vecalign">[code]</a> <a href="https://www.aclweb.org/anthology/D19-1136.pdf">[pdf]</a>  <a href="https://www.aclweb.org/anthology/D19-1136.bib">[BibTeX]</a></p>
+</li>
+</ul>
+<ul>
+<li><p>HABLex: Human Annotated Bilingual Lexicons for Experiments in Machine Translation <br />
+<b>Brian Thompson</b>, <a href="http://www.cs.jhu.edu/~rknowles/">Rebecca Knowles</a>, <a href="https://www.cs.jhu.edu/~xzhan138/">Xuan Zhang</a>, <a href="https://khayrallah.github.io/">Huda Khayrallah</a>, <a href="http://cs.jhu.edu/~kevinduh/">Kevin Duh</a>, and <a href="http://www.cs.jhu.edu/~phi/">Philipp Koehn</a> <br />
+Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP) <br />
+<a href="http://www.cs.jhu.edu/~kevinduh/a/hablex2019/">[dataset]</a> <a href="https://www.aclweb.org/anthology/D19-1142v2.pdf">[pdf]</a>  <a href="https://www.aclweb.org/anthology/D19-1142.bib">[BibTeX]</a></p>
+</li>
+</ul>
+<ul>
+<li><p>Overcoming Catastrophic Forgetting During Domain Adaptation of Neural Machine Translation <br />
+<b>Brian Thompson</b>, Jeremy Gwinnup, <a href="https://khayrallah.github.io/">Huda Khayrallah</a>, <a href="http://cs.jhu.edu/~kevinduh/">Kevin Duh</a>, and <a href="http://www.cs.jhu.edu/~phi/">Philipp Koehn</a> <br /> 
+Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics (NAACL) 2019 <br />
+<a href="https://www.aclweb.org/anthology/N19-1209.pdf">[pdf]</a> <a href="https://www.aclweb.org/anthology/N19-1209.bib">[BibTeX]</a> <a href="https://vimeo.com/356056256">[talk]</a></p>
+</li>
+</ul>
+<ul>
+<li><p>Freezing Subnetworks to Analyze Domain Adaptation in Neural Machine Translation <br />
+<b>Brian Thompson</b>, <a href="https://khayrallah.github.io/">Huda Khayrallah</a>, <a href="https://cs.gmu.edu/~antonis/author/antonios-anastasopoulos/">Antonios Anastasopoulos</a>, <a href="https://aryamccarthy.github.io/">Arya D. McCarthy</a>, <a href="http://cs.jhu.edu/~kevinduh/">Kevin Duh</a>, Rebecca Marvin, <a href="http://pmcnamee.net/">Paul McNamee</a>, Jeremy Gwinnup, Tim Anderson, and <a href="http://www.cs.jhu.edu/~phi/">Philipp Koehn</a> <br />
+Proceedings of the Third Conference on Machine Translation (WMT) 2018 <br /> 
+<a href="http://aclweb.org/anthology/W18-6313.pdf">[pdf]</a> <a href="http://aclweb.org/anthology/W18-6313.bib">[BibTeX]</a></p>
+</li>
+</ul>
+<ul>
+<li><p>Regularized Training Objective for Continued Training for Domain Adaptation in Neural Machine Translation <br />
+<a href="https://khayrallah.github.io/">Huda Khayrallah</a>, <b>Brian Thompson</b>, <a href="http://cs.jhu.edu/~kevinduh/">Kevin Duh</a>, and <a href="http://www.cs.jhu.edu/~phi/">Philipp Koehn</a> <br />
+Proceedings of the Workshop on Neural Machine Translation (WNMT) 2018 <br /> 
+<a href="http://aclweb.org/anthology/W18-2705.pdf">[pdf]</a>  <a href="http://aclweb.org/anthology/W18-2705.bib">[BibTeX]</a> </p>
+</li>
+</ul>
+<ul>
+<li><p>The JHU Machine Translation Systems for WMT 2018 <br />
+<a href="http://www.cs.jhu.edu/~phi/">Philipp Koehn</a>, <a href="http://cs.jhu.edu/~kevinduh/">Kevin Duh</a>, and <b>Brian Thompson</b> <br />
+Proceedings of the Third Conference on Machine Translation (WMT) 2018: Shared Task Papers <br />
+<a href="https://www.aclweb.org/anthology/W18-6417.pdf">[pdf]</a>  <a href="https://www.aclweb.org/anthology/W18-6417.bib">[BibTeX]</a></p>
+</li>
+</ul>
+<ul>
+<li><p>The AFRL-MITLL WMT17 Systems: Old, New, Borrowed, BLEU <br />
+Jeremy Gwinnup, Timothy Anderson, Grant Erdmann, Katherine Young, Michaeel Kazi, <a href="https://esalesky.github.io/">Elizabeth Salesky</a>, <b>Brian Thompson</b>, and Jonathan Taylor <br />
+Proceedings of the Second Conference on Machine Translation (WMT) 2017<br />
+<a href="https://www.aclweb.org/anthology/W17-4728.pdf">[pdf]</a>  <a href="https://www.aclweb.org/anthology/W17-4728.bib">[BibTeX]</a></p>
+</li>
+</ul>
+<ul>
+<li><p>Implicitly-Defined Neural Networks for Sequence Labeling <br />
+Michaeel Kazi and <b>Brian Thompson</b> <br />
+Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (ACL) 2017 <br />
+<a href="https://www.aclweb.org/anthology/P17-2027.pdf">[pdf]</a>  <a href="https://www.aclweb.org/anthology/P17-2027.bib">[BibTeX]</a> <a href="https://vimeo.com/234955651">[talk]</a></p>
+</li>
+</ul>
+<ul>
+<li><p>The MITLL-AFRL IWSLT 2016 Systems <br />
+Michaeel Kazi, <a href="https://esalesky.github.io/">Elizabeth Salesky</a>, <b>Brian Thompson</b>, Jonathan Taylor, Jeremy Gwinnup, Timothy Anderson, Grant Erdmann, Eric Hansen, Brian Ore, Katherine Young, and Michael Hutt <br />
+Proceedings of the ninth International Workshop on Spoken Language Translation (IWSLT) 2016 <br />
+<a href="pdf/kazi2016mitll.pdf">[pdf]</a> <a href="bib/kazi2016mitll.bib">[BibTeX]</a></p>
+</li>
+</ul>
+<ul>
+<li><p>The AFRL-MITLL WMT16 News-Translation Task Systems <br />
+Jeremy Gwinnup, Tim Anderson, Grant Erdmann, Katherine Young, Michaeel Kazi, <a href="https://esalesky.github.io/">Elizabeth Salesky</a>,  and <b>Brian Thompson</b> <br />
+Proceedings of the First Conference on Machine Translation (WMT) 2016 <br />
+<a href="https://www.aclweb.org/anthology/W16-2313.pdf">[pdf]</a> <a href="https://www.aclweb.org/anthology/W16-2313.bib">[BibTeX]</a></p>
+</li>
+</ul>
+<ul>
+<li><p>The MITLL-AFRL IWSLT 2015 System <br />
+Michaeel Kazi, <b>Brian Thompson</b>, <a href="https://esalesky.github.io/">Elizabeth Salesky</a>, Timothy Anderson, Grant Erdmann, Eric Hansen, Brian Ore, Katherine Young, Jeremy Gwinnup, Michael Hutt, and Christina May <br />
+Proceedings of the International Workshop on Spoken Language Translation (IWSLT) 2015 <br />
+<a href="pdf/kazi2015mitll.pdf">[pdf]</a> <a href="bib/kazi2015mitll.bib">[BibTeX]</a></p>
+</li>
+</ul>
+<ul>
+<li><p>The AFRL-MITLL WMT15 System: There’s More than One Way to Decode It! <br />
+Jeremy Gwinnup, Tim Anderson, Grant Erdmann, Katherine Young, Christina May, Michaeel Kazi, <a href="https://esalesky.github.io/">Elizabeth Salesky</a>, and <b>Brian Thompson</b> <br />
+Proceedings of the Tenth Workshop on Statistical Machine Translation (WMT) 2015 <br />
+<a href="https://www.aclweb.org/anthology/W15-3011.pdf">[pdf]</a>  <a href="https://www.aclweb.org/anthology/W15-3011.bib">[BibTeX]</a></p>
+</li>
+</ul>
+<ul>
+<li><p>The MITLL-AFRL IWSLT 2014 MT System <br />
+Michaeel Kazi, <a href="https://esalesky.github.io/">Elizabeth Salesky</a>, <b>Brian Thompson</b>, Jessica Ray, Michael Coury, Wade Shen, Tim Anderson, Grant Erdmann, Jeremy Gwinnup, Katherine Young, Brian Ore and Michael Hutt <br />
+Proceedings of the International Workshop on Spoken Language Translation (IWSLT) 2014 <br />
+<a href="pdf/kazi2014mitll.pdf">[pdf]</a> <a href="bib/kazi2014mitll.bib">[BibTeX]</a></p>
+</li>
+</ul>
+<ul>
+<li><p>Comparing a High and Low-Level Deep Neural Network Implementation for Automatic Speech Recognition <br />
+Jessica Ray, <b>Brian Thompson</b>, and Wade Shen <br />
+2014 First Workshop for High Performance Technical Computing in Dynamic Languages <br />
+<a href="https://ieeexplore.ieee.org/document/7069903">[pdf]</a> <a href="bib/ray2014comparing.bib">[BibTeX]</a></p>
+</li>
+</ul>
+<ul>
+<li><p>Discrimination Between Singing and Speech in Real-World Audio <br />
+<b>Brian Thompson</b> <br />
+IEEE Spoken Language Technology Workshop (SLT) 2014 <br />
+<a href="https://ieeexplore.ieee.org/document/7078609">[pdf]</a> <a href="bib/thompson2014discrimination.bib">[BibTeX]</a></p>
+</li>
+</ul>
+<div id="footer">
+<div id="footer-text">
+</div>
+</div>
+</div>
+</body>
+</html>
